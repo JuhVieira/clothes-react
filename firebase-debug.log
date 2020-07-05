@@ -1,0 +1,60 @@
+[debug] [2020-07-05T20:42:27.543Z] ----------------------------------------------------------------------
+[debug] [2020-07-05T20:42:27.545Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-07-05T20:42:27.545Z] CLI Version:   8.4.3
+[debug] [2020-07-05T20:42:27.545Z] Platform:      win32
+[debug] [2020-07-05T20:42:27.546Z] Node Version:  v12.18.0
+[debug] [2020-07-05T20:42:27.547Z] Time:          Sun Jul 05 2020 17:42:27 GMT-0300 (GMT-03:00)
+[debug] [2020-07-05T20:42:27.548Z] ----------------------------------------------------------------------
+[debug] [2020-07-05T20:42:27.548Z] 
+[debug] [2020-07-05T20:42:27.557Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-05T20:42:27.558Z] > authorizing via signed-in user
+[debug] [2020-07-05T20:42:27.558Z] [iam] checking project clothes-react for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-05T20:42:27.561Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clothes-react:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-05T20:42:27.623Z] [iam] error while checking permissions, command may fail: FirebaseError: Server Error. getaddrinfo ENOTFOUND cloudresourcemanager.googleapis.com
+[debug] [2020-07-05T20:42:27.624Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clothes-react  
+ 
+[debug] [2020-07-05T20:42:27.667Z] Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+[debug] [2020-07-05T20:42:27.932Z] FirebaseError: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com
+    at Request._callback (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:482:12)
+    at Request.onRequestError (C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:482:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:482:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project clothes-react. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-07-05T20:43:29.383Z] ----------------------------------------------------------------------
+[debug] [2020-07-05T20:43:29.386Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\andre\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-07-05T20:43:29.386Z] CLI Version:   8.4.3
+[debug] [2020-07-05T20:43:29.386Z] Platform:      win32
+[debug] [2020-07-05T20:43:29.386Z] Node Version:  v12.18.0
+[debug] [2020-07-05T20:43:29.388Z] Time:          Sun Jul 05 2020 17:43:29 GMT-0300 (GMT-03:00)
+[debug] [2020-07-05T20:43:29.388Z] ----------------------------------------------------------------------
+[debug] [2020-07-05T20:43:29.388Z] 
+[debug] [2020-07-05T20:43:29.398Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-05T20:43:29.399Z] > authorizing via signed-in user
+[debug] [2020-07-05T20:43:29.399Z] [iam] checking project clothes-react for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-07-05T20:43:29.403Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clothes-react:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-07-05T20:43:30.401Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 05 Jul 2020 20:43:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=739","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-07-05T20:43:30.403Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/clothes-react  
+ 
+[debug] [2020-07-05T20:43:31.529Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 05 Jul 2020 20:43:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'clothes-react'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-07-05T20:43:31.536Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clothes-react/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-07-05T20:43:31.843Z] Error: getaddrinfo ENOTFOUND firebasehosting.googleapis.com
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:66:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebasehosting.googleapis.com

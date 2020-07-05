@@ -1,0 +1,116 @@
+.close-button{
+    position: absolute;
+    right: 15px;
+    font-size: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        transform: scale(1.1);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.product-details{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 0;
+    .discount-flag{
+        position: absolute;
+        background: yellow;
+        padding: 5px 16px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    img{
+        height: 60vh;
+        width: 40vw;
+        object-fit: contain;
+        background-color: #f5deda4d;
+
+    }
+    .details{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border-left: solid 1px #e1e1e1;
+        padding-left: 5%;
+        .title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .price-details{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            // width: 50%;
+            p{
+                width: 40%;
+                margin: 0;
+            }
+            .installments{
+                width: 100%;
+            }
+            .regular-price{
+                text-decoration: line-through;
+            }
+            .actual-price{
+                font-size: 20px;
+                font-weight: 500;
+                margin-right: 15px;
+            }
+        }
+        .sizes{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 30px;
+            h3{
+                width: 100%;
+                text-align: center;
+            }
+            .size{
+                border: solid 1px #ccc;
+                border-radius: 50%;
+                height: 3.2rem;
+                width: 3.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 10px;
+                font-weight: 500;
+                cursor: pointer;
+                p{
+                    margin: 0;
+                    font-size: 1.2rem;
+                }
+                &.unavailable{
+                    background-color: #ccc;
+                    cursor: not-allowed;
+                }
+                &.selected{
+                    border-color: #13ABE1;
+                    color: #13ABE1;
+                }
+            }
+        }
+    }
+}
+
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }

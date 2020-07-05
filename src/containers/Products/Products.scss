@@ -1,0 +1,12 @@
+.products-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5deda4d;
+    .products-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;;
+    }
+    
+}

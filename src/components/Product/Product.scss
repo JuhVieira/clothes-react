@@ -1,0 +1,34 @@
+.item-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    .product-image{
+        height: 300px;
+        width: 300px;
+        .discount-flag{
+            position: absolute;
+            margin-left: 10px;
+            background: yellow;
+            padding: 5px 16px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            object-fit: contain;
+            background-color: #fff;
+        }
+
+    }
+    &:hover{
+        transform: scale(1.05);
+        transition: all .3s;
+        background-color: #fff;
+        box-shadow: 0 2px 12px 0 rgba(0,0,0,.3);
+    }
+}
